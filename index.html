@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
+
+    <!--=============== SWIPER CSS ===============-->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <title>Solutique</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header--top">
+
+        <div class="header--container container">
+          <div class="header--contact">
+            
+          </div>
+
+          <p class="header--alert-news">
+          Echa un vistazo a nuestras ofertas
+          </p>
+
+          <a href="login-register.html" class="header--top-action">
+            Acceder / Registrarse
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="" class="nav--logo">
+          <img src="assets/img/logo-solutique.png" alt="" class="nav--logo-img"/>
+        </a>
+
+        <div class="nav--menu" id="nav-menu">
+          <ul class="nav--list">
+            <li class="nav--item">
+               <a href="index.html" class="nav--link active-link">Inicio</a>
+            </li>
+              
+            <li class="nav--item">
+               <a href="shop.html" class="nav--link">Productos</a>
+            </li>
+
+            <li class="nav--item">
+               <a href="accounts.html" class="nav--link">Mi Cuenta</a>
+            </li>
+                        
+            
+            <li class="nav--item">
+               <a href="login-register.html" class="nav--link">Acceder</a>
+            </li>
+          </ul>
+
+          <div class="header--search">
+            <input type="text" placeholder="Buscar por artículo..." class="form--input">
+            <button class="search--btn">
+              <img src="assets/img/search.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="header--user-action">
+          <a href="wishlist.html" class="header--action-btn">
+            <img src="assets/img/icon-heart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header--action-btn">
+            <img src="assets/img/icon-cart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+     
+
+     <!--=============== CARRUSEL ===============-->
+  <section class="carrusel">
+    <div class="slides">
+      <div class="slide">
+        <img src="assets/img/carrusel1.jpeg" alt="Moda urbana" />
+        
+         
+      </div>
+      <div class="slide">
+        <img src="assets/img/carrusel2.jpeg" alt="Moda Casual" />
+        <div class="overlay">
+          <h1>Moda Casual</h1>
+          <p>Estilo y comodidad para tu día a día</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/img/carrusel3.jpeg" alt="Moda Formal" />
+        <div class="overlay">
+          <h1>Moda Formal</h1>
+          <p>Elegancia para cualquier ocasión</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carrusel-nav">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <button class="prev" aria-label="Slide anterior">&#10094;</button>
+    <button class="next" aria-label="Slide siguiente">&#10095;</button>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+
+
+     <!--=============== CATEGORIES ===============-->
+
+<!--=============== CATEGORIES ===============-->
+<section class="categories section">
+  <h3 class="section--title"><span>Categorías </span>Populares</h3>
+
+  <div class="categories--container swiper">
+    <div class="swiper-wrapper">
+      <a href="shop.html" class="category--item swiper-slide">
+        <img src="assets/img/category-1.jpg" alt="T-shirt" class="category--img">
+        <h3 class="category--title">T-shirt</h3>
+      </a>
+
+      <a href="shop.html" class="category--item swiper-slide">
+        <img src="assets/img/category-2.jpg" alt="Carteras" class="category--img">
+        <h3 class="category--title">Carteras</h3>
+      </a>
+
+      <a href="shop.html" class="category--item swiper-slide">
+        <img src="assets/img/category-3.jpg" alt="Sandalias" class="category--img">
+        <h3 class="category--title">Sandalias</h3>
+      </a>
+
+      <a href="shop.html" class="category--item swiper-slide">
+        <img src="assets/img/category-4.jpg" alt="Gorros" class="category--img">
+        <h3 class="category--title">Gorros</h3>
+      </a>
+
+      <a href="shop.html" class="category--item swiper-slide">
+        <img src="assets/img/category-5.jpg" alt="Zapatos" class="category--img">
+        <h3 class="category--title">Zapatos</h3>
+      </a>
+
+      <a href="shop.html" class="category--item swiper-slide">
+        <img src="assets/img/category-7.jpg" alt="Pantalones" class="category--img">
+        <h3 class="category--title">Pantalones</h3>
+      </a>
+
+      <a href="shop.html" class="category--item swiper-slide">
+        <img src="assets/img/category-8.jpg" alt="Gorros Playeros" class="category--img">
+        <h3 class="category--title">Gorros Playeros</h3>
+      </a>
+    </div>
+
+    <div class="swiper-button-next"><i class="fi fi-rs-angle-right"></i>
+    </div>
+    <div class="swiper-button-prev"><i class="fi fi-rs-angle-left"></i>
+    </div>
+
+  
+
+      <!--=============== PRODUCTS ===============-->
+      
+
+      <!--=============== FILTROS ===============-->
+<section class="products-filter container section">
+  <h3 class="section--title"><span>Explora</span> Productos</h3>
+
+  <!-- Botones de filtrado -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="todos">Todos</button>
+    <button class="filter-btn" data-filter="tendencias">Tendencias</button>
+    <button class="filter-btn" data-filter="descuentos">Descuentos</button>
+    <button class="filter-btn" data-filter="recientes">Recientes</button>
+  </div>
+
+  <!-- Productos -->
+  <div class="products-grid">
+    <!-- Producto 1 -->
+    <div class="product-item trending">
+      <div class="product-label trending-label">Tendencia</div>
+      <div class="product-img">
+        <img src="assets/img/product-1-1.jpg" alt="Producto 1">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Camiseta Urbana</h4>
+      <div class="product-price-rating">
+        <span class="product-price">$250.00</span>
+        <div class="product-stars">
+          ★★★★☆
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product-item discount">
+      <div class="product-label discount-label">-20%</div>
+      <div class="product-img">
+        <img src="assets/img/product-13-1.jpg" alt="Producto 2">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Bolso Casual</h4>
+      <div class="product-price-rating">
+        <span class="product-price-new">$450.00</span>
+        <span class="product-price-old">$550.00</span>
+        <div class="product-stars">★★★★☆</div>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product-item new">
+      <div class="product-label new-label">Nuevo</div>
+      <div class="product-img">
+        <img src="assets/img/showcase-img-7.jpg" alt="Producto 3">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Zapatos Modernos</h4>
+      <div class="product-price-rating">
+        <span class="product-price">$60.00</span>
+        <div class="product-stars">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product-item trending">
+      <div class="product-label trending-label">Tendencia</div>
+      <div class="product-img">
+        <img src="assets/img/category-8.jpg" alt="Producto 4">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Gorra Cool</h4>
+      <div class="product-price-rating">
+        <span class="product-price">$15.00</span>
+        <div class="product-stars">★★★☆☆</div>
+      </div>
+    </div>
+
+    <!-- Repite productos para segunda fila cambiando etiquetas según el filtro -->
+    <div class="product-item discount">
+      <div class="product-label discount-label">-15%</div>
+      <div class="product-img">
+        <img src="assets/img/product-10-2.jpg" alt="Producto 5">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Sandalias Verano</h4>
+      <div class="product-price-rating">
+        <span class="product-price-new">$30.00</span>
+        <span class="product-price-old">$40.00</span>
+        <div class="product-stars">★★★☆☆</div>
+      </div>
+    </div>
+
+    <div class="product-item new">
+      <div class="product-label new-label">Nuevo</div>
+      <div class="product-img">
+        <img src="assets/img/product-4-2.jpg" alt="Producto 6">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Pantalones Modernos</h4>
+      <div class="product-price-rating">
+        <span class="product-price">$40.00</span>
+        <div class="product-stars">★★★★☆</div>
+      </div>
+    </div>
+
+    <div class="product-item trending">
+      <div class="product-label trending-label">Tendencia</div>
+      <div class="product-img">
+        <img src="assets/img/product-13-2.jpg" alt="Producto 7">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Bolso Street</h4>
+      <div class="product-price-rating">
+        <span class="product-price">$50.00</span>
+        <div class="product-stars">★★★★☆</div>
+      </div>
+    </div>
+
+    <div class="product-item discount">
+      <div class="product-label discount-label">-10%</div>
+      <div class="product-img">
+        <img src="assets/img/showcase-img-1.jpg" alt="Producto 8">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Cartera Elegante</h4>
+      <div class="product-price-rating">
+        <span class="product-price-new">$35.00</span>
+        <span class="product-price-old">$45.00</span>
+        <div class="product-stars">★★★☆☆</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      <!--=============== DEALS ===============-->
+     <section class="deals section">
+  <div class="deals--container container grid">
+
+    <!-- Item 1 -->
+    <div class="deals--item">
+      <div class="deals--group">
+        <h3 class="deals--brand">Oferta del Día</h3>
+        <span class="deals--category">Cantidades ilimitadas</span>
+      </div>
+
+      <h4 class="deals--title">Nueva Colección de Verano</h4>
+
+      <div class="deals--price flex">
+        <span class="new--price">$139.00</span>
+        <span class="old--price">$160.99</span>
+      </div>
+
+      <p class="deals--countdown-text">¡Date prisa! La oferta termina en:</p>
+
+      <div class="countdown">
+        <div class="countdown--amount">
+          <p class="countdown--period">02</p>
+          <span class="unit">Días</span>
+        </div>
+        <div class="countdown--amount">
+          <p class="countdown--period">22</p>
+          <span class="unit">Horas</span>
+        </div>
+        <div class="countdown--amount">
+          <p class="countdown--period">57</p>
+          <span class="unit">Min</span>
+        </div>
+        <div class="countdown--amount">
+          <p class="countdown--period">24</p>
+          <span class="unit">Seg</span>
+        </div>
+      </div>
+
+      <div class="deals--btn">
+        <a href="details.html" class="btn btn--md">Comprar Ahora</a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="deals--item">
+      <div class="deals--group">
+        <h3 class="deals--brand">Ropa de Mujer</h3>
+        <span class="deals--category">Cantidades ilimitadas</span>
+      </div>
+
+      <h4 class="deals--title">Prueba Algo Nuevo en Vacaciones</h4>
+
+      <div class="deals--price flex">
+        <span class="new--price">$229.00</span>
+        <span class="old--price">$400.99</span>
+      </div>
+
+      <p class="deals--countdown-text">¡Date prisa! La oferta termina en:</p>
+
+      <div class="countdown">
+        <div class="countdown--amount">
+          <p class="countdown--period">02</p>
+          <span class="unit">Días</span>
+        </div>
+        <div class="countdown--amount">
+          <p class="countdown--period">22</p>
+          <span class="unit">Horas</span>
+        </div>
+        <div class="countdown--amount">
+          <p class="countdown--period">57</p>
+          <span class="unit">Min</span>
+        </div>
+        <div class="countdown--amount">
+          <p class="countdown--period">24</p>
+          <span class="unit">Seg</span>
+        </div>
+      </div>
+
+      <div class="deals--btn">
+        <a href="details.html" class="btn btn--md">Comprar Ahora</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+      <!--=============== BOUTIQUE DESTACADAS ===============-->
+
+
+      <!--=============== NEW ARRIVALS ===============-->
+      <section class="new__arrivals"></section>
+
+      <!--=============== SHOWCASE ===============-->
+      <section class="showcase"></section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter"></section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+
+    <footer class="footer">
+  <div class="footer--container container flex">
+    <p class="footer--text">Solutique © 2025 - Moda extravagante</p>
+
+    <div class="footer--socials">
+      <a href="https://www.instagram.com/" target="_blank" class="footer--social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/" target="_blank" class="footer--social-link">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:tuemail@gmail.com" class="footer--social-link">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+        <!--=============== SWIPER JS ===============-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="assets/js/carrusel-categorias.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/filtrar-productos.js"></script>
+  </body>
+</html>
