@@ -110,6 +110,11 @@ input {
   outline: none;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1320px;
@@ -139,6 +144,20 @@ input {
   color: #004aad; /* Color azul solicitado */
   }
 
+  .form {
+    row-gap: 1rem;
+  }
+
+  .form--group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .textarea {
+    height: 200px;
+    padding-block: 1rem;
+    resize: none;
+  }
 /*=============== HEADER & NAV ===============*/
 .header--top {
   background: linear-gradient(90deg, #004aad 0%, #1b9aaa 100%);; 
@@ -1116,6 +1135,98 @@ input {
     max-width: 100%;
   }
 }
+
+/*=============== DETAILS INFO & REVIEWS ===============*/
+.detail--tabs {
+  display: flex;
+  column-gap: 1.75rem;
+  margin-bottom: 3rem;
+}
+
+.detail--tab {
+  font-family: var(--second-color);
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-600);
+  cursor: pointer;
+}
+
+.detail--tab.active-tab {
+  color: #004aad;
+}
+
+.detail--tab-content:not/(.active-tab) {
+  display: none;
+  }
+
+  .info--tab tr th,
+  .info--table tr td {
+    border: 1px solid var(--border-color-alt);
+    padding: 0.625rem 1.25rem;
+  }
+
+  .info--table tr th {
+    font-weight: var(--weight-500);
+    text-align: left;
+  }
+
+  .info--table tr td {
+    color: var(--text-color-light);
+  }
+
+  .reviews--container {
+    padding-bottom: 3rem;
+    row-gap: 1..25rem;
+  }
+
+  .reviews--single {
+    border-bottom: 1px solid var(--border-color-alt);
+    padding-bottom: 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.5rem;
+  }
+
+  .reviews--single:last-child {
+    padding-bottom: 3rem;
+  }
+
+  .review--img {
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+  .review--title {
+    font-size: var(--tiny-font-size);
+  }
+
+  .review--data {
+    width: calc(100% -94px);
+  }
+
+  .review--description {
+    margin-bottom: 0.5rem;
+  }
+
+  .review--rating {
+    color: hsl(42, 100%, 50%);
+    margin-bottom: 0.25rem;
+  }
+
+  .review--rating,
+  .review--date {
+    font-size: var(--smaller-font-size);
+  }
+
+  .review--form-title {
+    font-size: var(--large-font-size);
+    margin-bottom: 1rem;
+  }
+
+  .rate--product {
+    margin-bottom: 2rem;
+  }
+    
 /*=============== CART ===============*/
 
 /*=============== CART OTHERS ===============*/

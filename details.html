@@ -216,185 +216,201 @@
       </section>
 
       <!--=============== DETAILS TAB ===============-->
-      <section class="details__tab container">
-        <div class="detail--tabs">
+      <section class="details__tab container" style="margin-bottom: 3rem;">
+        <div class="detail--tabs" style="margin-bottom: 2rem;">
           <span class="detail--tab active-tab" data-target="#info">Información adicional</span>
           <span class="detail--tab" data-target="#reviews">Reseñas(3)</span>
         </div>
 
-        <div class="details--tabs-content">
-          <div class="details--tab-content active-tab" content id="info"></div>
-          <table class="table info--table">
-            <tr>
-              <th>Stand Up</th>
-              <td>35"L x 24"W x 37-45"H(front to back wheel)</td>
-            </tr>
+        <div class="details--tabs-content" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+          <!-- Información adicional -->
+          <div class="details--tab-content active-tab" id="info" style="background: transparent; border-radius: 1.2rem; box-shadow: none; padding: 2rem 0; flex: 1; min-width: 320px;">
+            <h4 style="color: #004aad; font-size: 1.3rem; font-weight: 700; margin-bottom: 1.2rem;">Detalles del producto</h4>
+            <table class="table info--table" style="width: 100%; border-radius: 0.7rem; overflow: hidden; background: #fff; border: 1.5px solid #e0e0e0;">
+              <tr style="background: #eaf2fb;"><th>Stand Up</th><td>35"L x 24"W x 37-45"H(front to back wheel)</td></tr>
+              <tr><th>Folder (w/o wheels)</th><td>32.5"L x 18.5"W x 16.5" H</td></tr>
+              <tr style="background: #eaf2fb;"><th>Folder (w/ wheels)</th><td>32.5"L x 24"W x 18.5" H</td></tr>
+              <tr><th>Door Pass Through</th><td>24</td></tr>
+              <tr style="background: #eaf2fb;"><th>Frame</th><td>Aluminun</td></tr>
+              <tr><th>Weight (w/o wheels)</th><td>20 LBS</td></tr>
+              <tr style="background: #eaf2fb;"><th>Wight Capacity</th><td>60 LBS</td></tr>
+              <tr><th>Width</th><td>24"</td></tr>
+              <tr style="background: #eaf2fb;"><th>Handle height (ground to  handle)</th><td>37-45"</td></tr>
+              <tr><th>Wheels</th><td>12" air / wide track slick tread</td></tr>
+              <tr style="background: #eaf2fb;"><th>Seat back height</th><td>21.5"</td></tr>
+              <tr><th>Head room (inside canopy)</th><td>25"</td></tr>
+              <tr style="background: #eaf2fb;"><th>Color</th><td>Blanco, Negro, Rojo</td></tr>
+              <tr><th style="border-bottom: 2px solid #e0e0e0;">Size</th><td style="border-bottom: 2px solid #e0e0e0;">S, M</td></tr>
+            </table>
+          </div>
 
-             <tr>
-              <th>Folder (w/o wheels)</th>
-              <td>32.5"L x 18.5"W x 16.5" H</td>
-            </tr>
-
-             <tr>
-              <th>Folder (w/ wheels)</th>
-              <td>32.5"L x 24"W x 18.5" H</td>
-            </tr>
-
-             <tr>
-              <th>Door Pass Through</th>
-              <td>24</td>
-            </tr>
-
-             <tr>
-              <th>Frame</th>
-              <td>Aluminun</td>
-            </tr>
-
-
-             <tr>
-              <th>Weight (w/o wheels)</th>
-              <td>20 LBS</td>
-            </tr>
-
-             <tr>
-              <th>Wight Capacity</th>
-              <td>60 LBS</td>
-            </tr>
-
-             <tr>
-              <th>Width</th>
-              <td>24"</td>
-            </tr>
-
-             <tr>
-              <th>Handle height (ground to  handle)</th>
-              <td>37-45"</td>
-            </tr>
-
-             <tr>
-              <th>Wheels</th>
-              <td>12" air / wide track slick tread</td>
-            </tr>
-
-            <tr>
-              <th>Seat back height</th>
-              <td>21.5"</td>
-            </tr>
-
-            <tr>
-              <th>Head room (inside canopy)</th>
-              <td>25"</td>
-            </tr>
-
-            <tr>
-              <th>Color</th>
-              <td>Blanco, Negro, Rojo</td>
-            </tr>
-
-            <tr>
-              <th>Size</th>
-              <td>S, M</td>
-            </tr>
-          </table>
-
-          <div class="details--tab-content" content id="reviews">
-            <div class="reviews--container grid">
-              <div class="review--single">
+          <!-- Reseñas -->
+          <div class="details--tab-content" id="reviews" style="background: #f5f7fa; border-radius: 1.2rem; box-shadow: 0 2px 12px rgba(0,74,173,0.08); padding: 2rem; flex: 1; min-width: 320px;">
+            <h4 style="color: #004aad; font-size: 1.3rem; font-weight: 700; margin-bottom: 1.2rem;">Reseñas de clientes</h4>
+            <div class="reviews--container grid" style="row-gap: 2rem;">
+              <!-- Reseña 1 -->
+              <div class="review--single" style="background: #fff; border-radius: 1rem; box-shadow: 0 2px 8px rgba(0,74,173,0.07); padding: 1.2rem; display: flex; align-items: flex-start; gap: 1.5rem;">
                 <div>
-                  <img src="assets/img/avatar-1.jpg" alt="" class="review--img">
-                  <h4 class="review--title">Jacky Chan</h4>
-                </div> 
-
-                <div class="review--data">
-                  <div class="review--rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-
-                  <p class="review--description">Muchas gracias, el pedido me llegó en 3 días</p>
-
-                  <span class="review--date">4 de Diembre 2025 a las 3:12 pm</span>
+                  <img src="assets/img/avatar-1.jpg" alt="" class="review--img" style="width: 70px; border-radius: 50%; margin-bottom: 0.5rem;">
+                  <h4 class="review--title" style="font-size: 1rem; color: #004aad;">Jacky Chan</h4>
                 </div>
-            
-            <div class="review--single">
-                <div>
-                  <img src="assets/img/avatar-2.jpg" alt="" class="review--img">
-                  <h4 class="review--title">Nathalia Peluche</h4>
-                </div> 
-
                 <div class="review--data">
-                  <div class="review--rating">
+                  <div class="review--rating" style="color: #fbbc05; margin-bottom: 0.25rem;">
                     <i class="fi fi-rs-star"></i>
                     <i class="fi fi-rs-star"></i>
                     <i class="fi fi-rs-star"></i>
                     <i class="fi fi-rs-star"></i>
                     <i class="fi fi-rs-star"></i>
                   </div>
-
-                  <p class="review--description">Muy buenos precios</p>
-
-                  <span class="review--date">4 de Diembre 2025 a las 3:12 pm</span>
+                  <p class="review--description" style="margin-bottom: 0.5rem;">Muchas gracias, el pedido me llegó en 3 días</p>
+                  <span class="review--date" style="font-size: 0.85rem; color: #888;">4 de Diciembre 2025 a las 3:12 pm</span>
                 </div>
-
-
-                <div class="review--single">
+              </div>
+              <!-- Reseña 2 -->
+              <div class="review--single" style="background: #fff; border-radius: 1rem; box-shadow: 0 2px 8px rgba(0,74,173,0.07); padding: 1.2rem; display: flex; align-items: flex-start; gap: 1.5rem;">
                 <div>
-                  <img src="assets/img/avatar-3.jpg" alt="" class="review--img">
-                  <h4 class="review--title">Michael Ronda</h4>
-                </div> 
-
+                  <img src="assets/img/avatar-2.jpg" alt="" class="review--img" style="width: 70px; border-radius: 50%; margin-bottom: 0.5rem;">
+                  <h4 class="review--title" style="font-size: 1rem; color: #004aad;">Nathalia Peluche</h4>
+                </div>
                 <div class="review--data">
-                  <div class="review--rating">
+                  <div class="review--rating" style="color: #fbbc05; margin-bottom: 0.25rem;">
                     <i class="fi fi-rs-star"></i>
                     <i class="fi fi-rs-star"></i>
                     <i class="fi fi-rs-star"></i>
                     <i class="fi fi-rs-star"></i>
                     <i class="fi fi-rs-star"></i>
                   </div>
-
-                  <p class="review--description">La tela es de muy buena calidad</p>
-
-                  <span class="review--date">4 de Diembre 2025 a las 3:12 pm</span>
+                  <p class="review--description" style="margin-bottom: 0.5rem;">Muy buenos precios</p>
+                  <span class="review--date" style="font-size: 0.85rem; color: #888;">4 de Diciembre 2025 a las 3:12 pm</span>
+                </div>
+              </div>
+              <!-- Reseña 3 -->
+              <div class="review--single" style="background: #fff; border-radius: 1rem; box-shadow: 0 2px 8px rgba(0,74,173,0.07); padding: 1.2rem; display: flex; align-items: flex-start; gap: 1.5rem;">
+                <div>
+                  <img src="assets/img/avatar-3.jpg" alt="" class="review--img" style="width: 70px; border-radius: 50%; margin-bottom: 0.5rem;">
+                  <h4 class="review--title" style="font-size: 1rem; color: #004aad;">Michael Ronda</h4>
+                </div>
+                <div class="review--data">
+                  <div class="review--rating" style="color: #fbbc05; margin-bottom: 0.25rem;">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <p class="review--description" style="margin-bottom: 0.5rem;">La tela es de muy buena calidad</p>
+                  <span class="review--date" style="font-size: 0.85rem; color: #888;">4 de Diciembre 2025 a las 3:12 pm</span>
                 </div>
               </div>
             </div>
-
-            <div class="review--rorm">
-              <h4 class="review--form-title">Añadir una reseña</h4>
-
-              <div class="rate--product">
-                  <div class="review--rating">
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                    <i class="fi fi-rs-star"></i>
-                  </div>
-
-                  <form action="" class="form grid">
-                    <textarea class="form--input textarea" placeholder="Write Comment"></textarea>
-
-                    <div class="form--group grid">
-                      <input type="text" placeholder="Name" class="form--input"/>
-
-
-                      <input type="email" placeholder="Email" class="form--input"/>
-                    </div>
-
-                    <div class="form--btn">
-                      <button class="btn">Subir Reseña</button>
-                    </div>
-                  </form>
+            <!-- Formulario de reseña -->
+            <div class="review--form" style="margin-top: 2.5rem;">
+              <h4 class="review--form-title" style="font-size: 1.1rem; color: #004aad; margin-bottom: 1rem;">Añadir una reseña</h4>
+              <div class="rate--product" style="margin-bottom: 1.2rem;">
+                <div class="review--rating" style="color: #fbbc05; font-size: 1.3rem;">
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
+                </div>
+              </div>
+              <form action="" class="form grid" style="gap: 1rem;">
+                <textarea class="form--input textarea" placeholder="Escribe tu comentario" style="border-radius: 0.7rem; border: 1.5px solid #def7; padding: 1rem; background: #fff;"></textarea>
+                <div class="form--group grid" style="grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                  <input type="text" placeholder="Nombre" class="form--input" style="border-radius: 0.7rem; border: 1.5px solid #def7; padding: 0.7rem; background: #fff;"/>
+                  <input type="email" placeholder="Email" class="form--input" style="border-radius: 0.7rem; border: 1.5px solid #def7; padding: 0.7rem; background: #fff;"/>
+                </div>
+                <div class="form--btn">
+                  <button class="btn" style="background: #004aad; color: #fff; border-radius: 0.7rem; font-weight: 700; padding: 0.7rem 2rem;">Subir Reseña</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
       <!--=============== PRODUCTS ===============-->
-      <section class="products"></section>
+      <section class="products container section--lg" style="margin-top: -9rem;">
+        <h3 class="section--title"><span>Productos</span> Relacionados</h3>
+         <!-- Productos -->
+  <div class="products-grid">
+    <!-- Producto 1 -->
+    <div class="product-item trending">
+      <div class="product-label trending-label">Tendencia</div>
+      <div class="product-img">
+        <img src="assets/img/product-1-1.jpg" alt="Producto 1">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Camiseta Urbana</h4>
+      <div class="product-price-rating">
+        <span class="product-price">$250.00</span>
+        <div class="product-stars">
+          ★★★★☆
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product-item discount">
+      <div class="product-label discount-label">-20%</div>
+      <div class="product-img">
+        <img src="assets/img/product-2-1.jpg" alt="Producto 2">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Camisa floral</h4>
+      <div class="product-price-rating">
+        <span class="product-price-new">$450.00</span>
+        <span class="product-price-old">$550.00</span>
+        <div class="product-stars">★★★★☆</div>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product-item new">
+      <div class="product-label new-label">Nuevo</div>
+      <div class="product-img">
+        <img src="assets/img/product-9-1.jpg" alt="Producto 3">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Camisa de verano</h4>
+      <div class="product-price-rating">
+        <span class="product-price">$60.00</span>
+        <div class="product-stars">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product-item trending">
+      <div class="product-label trending-label">Tendencia</div>
+      <div class="product-img">
+        <img src="assets/img/showcase-img-5.jpg" alt="Producto 4">
+        <div class="product-hover-icons">
+          <button class="icon-heart" title="Agregar a favoritos">❤️</button>
+          <button class="icon-cart" title="Agregar al carrito">🛒</button>
+          <button class="icon-share" title="Compartir">🔗</button>
+        </div>
+      </div>
+      <h4 class="product-name">Camisa Cool</h4>
+      <div class="product-price-rating">
+        <span class="product-price">$15.00</span>
+        <div class="product-stars">★★★☆☆</div>
+      </div>
+    </div>
+
+      </section>
 
       <!--=============== NEWSLETTER ===============-->
       <section class="newsletter"></section>
@@ -420,7 +436,9 @@
 </footer>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <script src="assets/js/carrusel-categorias.js"></script>
+
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
@@ -439,6 +457,35 @@ smallImgs.forEach(img => {
     this.classList.add('selected');
   });
 });
-</script>
+
+// Tabs funcionalidad para detalles y reseñas
+const tabBtns = document.querySelectorAll('.detail--tab');
+const tabContents = document.querySelectorAll('.details--tab-content');
+
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Quitar clase activa de los tabs
+    tabBtns.forEach(b => b.classList.remove('active-tab'));
+    // Agregar clase activa al tab seleccionado
+    this.classList.add('active-tab');
+    // Mostrar el contenido correspondiente
+    tabContents.forEach(content => {
+      if (content.id === this.getAttribute('data-target').replace('#','')) {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    });
+  });
+});
+// Inicializa mostrando solo el tab activo
+window.addEventListener('DOMContentLoaded', function() {
+  tabContents.forEach(content => {
+    if (!content.classList.contains('active-tab')) {
+      content.style.display = 'none';
+    }
+  });
+});
+    </script>
   </body>
 </html>
