@@ -89,11 +89,6 @@ var swiperCategories = new Swiper(".categories--container", {
   initialSlide: 0,         // 👈 asegura empezar desde la primera tarjeta
 });
 
-window.addEventListener('load', () => {
-  const swiper = document.querySelector('.categories--container.swiper').swiper;
-  swiper.update();
-});
-
 
 
 

@@ -259,14 +259,20 @@ table {
 /* Ajustes para la lupa dentro del input */
 .header--search {
   position: relative;
-  width: 300px; /* ancho del buscador */
+  width: 400px; /* ancho del buscador aumentado */
   max-width: 100%;
+  margin: 0 auto; /* Centrado */
+  display: flex;
+  justify-content: center;
 }
 
 .header--search .form--input {
   width: 100%;
   padding: 12px 45px 12px 15px; /* espacio a la derecha para la lupa */
+  border-width: 2px;
+  border-style: solid;
   border-radius: 30px;
+  border-color: black;
   background-color: #fff;
   font-size: var(--small-font-size);
   color: var(--text-color);
@@ -274,7 +280,7 @@ table {
 }
 
 .header--search .form--input:focus {
-  border-color: var(--first-color);
+  border-color: #003d8a;
   box-shadow: 0 0 12px rgba(27, 154, 170, 0.25);
   width: 100%;
 }
@@ -429,7 +435,8 @@ table {
   position: relative;
   overflow: hidden;
   max-width: 100vw;
-  margin-top: -1rem; /* Ajusta este valor para subir o bajar */
+  margin-top: 0; /* Ajustado para que quede debajo del menú */
+  z-index: 1; /* Asegura que esté debajo del menú */
 }
 
 /* Botones prev/next */
@@ -445,7 +452,7 @@ table {
   height: 40px;     /* mismo alto */
   border-radius: 50%; /* círculo perfecto */
   cursor: pointer;
-  z-index: 10;
+  z-index: 5; /* Menor que el z-index del menú */
   display: flex;           /* centra el ícono */
   align-items: center;
   justify-content: center;
@@ -2474,10 +2481,16 @@ table {
   .nav--logo-img {
     width: 116px;
   }
+  .nav--menu-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
   .nav--menu-logo img {
-    width: 100px;   /* Ajusta el ancho a tu gusto */
+    width: 150px;   /* Logo más grande */
     height: auto;   /* Mantiene la proporción original */
-    align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -2486,16 +2499,18 @@ table {
     position: fixed;
     right: -100%;
     top: 0;
-    max-width: 400px;
+    max-width: 100%;
     width: 100%;
+    height: 100vh;
     padding: 1.25rem 2rem;
     background-color: var(--body-color);
-    z-index: 100;
+    z-index: 1000;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2rem;
     box-shadow: 0 0 15px hsla(0, 0%, 0%, 0.1);
     transition: all 0.25s var(--transition);
+    overflow-y: auto;
   }
 
   .show-menu {
@@ -2505,16 +2520,21 @@ table {
   .nav--list {
     order: 1;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
     row-gap: 1.5rem;
   }
 
   .nav--link {
-    font-size: var(--large-font-size);
+    font-size: var(--h3-font-size);
+    text-align: center;
+    display: block;
+    width: 100%;
   }
 
   .header--search .form--input {
-    border-color: var(--first-color);
+    border-color: black;
+    width: 100%;
   }
 
 .nav--menu-top,
@@ -2537,6 +2557,28 @@ table {
   font-size: var(--h2-font-size);
   line-height: 1rem;
 }
+
+.nav--menu-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.5rem;
+border-bottom: 2px solid #004aad; /* azul */
+  padding-bottom: 0.5rem;
+}
+
+.show-menu::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: -1;
+}
+
 
 .header--action-btn img {
   width: 21px;
