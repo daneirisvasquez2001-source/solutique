@@ -382,7 +382,7 @@
 
     <!--=============== SWIPER JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script src="assets/js/carrusel-categorias.js"></script>
+    <script src="assets/js/carrusel-categorias.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
@@ -406,7 +406,35 @@
       });
     </script>
     
-    <!-- Script para el menú -->
-    <script src="assets/js/main.js"></script>
+
+
+    <!--=============== SCRIPT ===============-->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navMenu = document.getElementById('nav-menu');
+      const navToggle = document.getElementById('nav-toggle');
+      const navClose = document.getElementById('nav-close');
+      const navLinks = document.querySelectorAll('.nav--link');
+
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.add('show-menu');
+        });
+      }
+
+      if (navClose) {
+        navClose.addEventListener('click', () => {
+          navMenu.classList.remove('show-menu');
+        });
+      }
+
+      navLinks.forEach(link =>
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('show-menu');
+        })
+      );
+    });
+
+    
   </body>
 </html>
