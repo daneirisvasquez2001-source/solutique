@@ -50,6 +50,22 @@ if(navClose) {
     navMenu.classList.remove('show-menu');
   });
 }
+
+/* Hide menu */
+if (navClose) {
+  navClose.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+  });
+}
+
+/* Optional: hide menu al hacer click en un enlace */
+const navLinks = document.querySelectorAll('.nav--link');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+  });
+});
+
 /* Validate if constant exists */
 
 /*=============== IMAGE GALLERY ===============*/
