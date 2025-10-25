@@ -4,40 +4,260 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
+   <!--=============== FLATICON ===============-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+     <!--=============== SWIPER CSS ===============-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
+  <!--=============== CSS ===============-->
 
-    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Solutique</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
-    <header class="header"></header>
+    <header class="header">
+      <div class="header--top">
+
+        <div class="header--container container">
+          <div class="header--contact">
+            
+          </div>
+
+          <p class="header--alert-news">
+          Echa un vistazo a nuestras ofertas
+          </p>
+
+          <a href="login-register.html" class="header--top-action">
+            Acceder / Registrarse
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="" class="nav--logo">
+          <img src="assets/img/logo-solutique.png" alt="" class="nav--logo-img"/>
+        </a>
+
+        <div class="nav--menu" id="nav-menu">
+          <ul class="nav--list">
+            <li class="nav--item">
+               <a href="index.html" class="nav--link">Inicio</a>
+            </li>
+              
+            <li class="nav--item">
+               <a href="shop.html" class="nav--link">Productos</a>
+            </li>
+
+            <li class="nav--item">
+               <a href="accounts.html" class="nav--link">Mi Cuenta</a>
+            </li>
+                        
+           
+            <li class="nav--item">
+               <a href="login-register.html" class="nav--link">Acceder</a>
+            </li>
+          </ul>
+
+          <div class="header--search">
+            <input type="text" placeholder="Buscar por artículo..." class="form--input">
+            <button class="search--btn">
+            </button>
+          </div>
+        </div>
+
+        <div class="header--user-action">
+          <a href="wishlist.html" class="header--action-btn">
+            <img src="assets/img/icon-heart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header--action-btn">
+            <img src="assets/img/icon-cart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+
+        </div>
+      </nav>
+    </header>
+
 
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb"></section>
+     <section class="breadcrumb">
+        <ul class="breadcrumb--list flex container">
+          <li><a href="index.html" class="breadcrumb--link">Inicio</a></li>
+          <li><span class="breadcrumb--link">></span></span></li>
+          <li><span class="breadcrumb--link">Productos</span></span></li>
+          <li><span class="breadcrumb--link">></span></span></li>
+          <li><span class="breadcrumb--link">Carrito de Compras</span></span></li>
+        </ul>
+      </section>
 
-      <!--=============== CART ===============-->
-      <section class="cart"></section>
+    <!--=============== CART ===============-->
+<section class="cart section--lg container">
+  <div class="cart--header">
+    <h2 class="cart--title">Tu Carrito de Compras</h2>
+    <p class="cart--subtitle">Revisa tus productos antes de proceder al checkout</p>
+  </div>
+  
+  <div class="table--container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th><i class="fi fi-rs-picture"></i> Imagen</th>
+          <th><i class="fi fi-rs-label"></i> Producto</th>
+          <th><i class="fi fi-rs-dollar"></i> Precio</th>
+          <th><i class="fi fi-rs-shopping-cart-add"></i> Cantidad</th>
+          <th><i class="fi fi-rs-calculator"></i> Total</th>
+          <th><i class="fi fi-rs-trash"></i> Eliminar</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><img src="assets/img/product-1-2.jpg" alt="" class="table--img" /></td>
+          <td>
+            <h3 class="table--title">J.Crew Mercantile Women Short-Sleeve</h3>
+            <p class="table--description">Maboriosam in a tonto nesciung eget disting magndapibus</p>
+          </td>
+          <td><span class="table--price">$110</span></td>
+          <td><input type="number" value="3" class="quantity" /></td>
+          <td><span class="table--subtotal">$330</span></td>
+          <td><i class="fi fi-rs-trash table--trash"></i></td>
+        </tr>
+
+        <tr>
+          <td><img src="assets/img/product-7-1.jpg" alt="" class="table--img" /></td>
+          <td>
+            <h3 class="table--title">Amazon Essentials Women Tank</h3>
+            <p class="table--description">Maboriosam in a tonto nesciung eget disting magndapibus</p>
+          </td>
+          <td><span class="table--price">$120</span></td>
+          <td><input type="number" value="2" class="quantity" /></td>
+          <td><span class="table--subtotal">$240</span></td>
+          <td><i class="fi fi-rs-trash table--trash"></i></td>
+        </tr>
+
+        <tr>
+          <td><img src="assets/img/product-2-1.jpg" alt="" class="table--img" /></td>
+          <td>
+            <h3 class="table--title">Amazon Brand - Daily Ritual Womens Jersey</h3>
+            <p class="table--description">Maboriosam in a tonto nesciung eget disting magndapibus</p>
+          </td>
+          <td><span class="table--price">$150</span></td>
+          <td><input type="number" value="1" class="quantity" /></td>
+          <td><span class="table--subtotal">$150</span></td>
+          <td><i class="fi fi-rs-trash table--trash"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cart--actions">
+    <a href="#" class="btn flex btn--md"><i class="fi fi-rs-shuffle"></i> Actualizar Carrito</a>
+    <a href="#" class="btn flex btn--md"><i class="fi fi-rs-shopping-bag"></i> Continuar Comprando</a>
+  </div>
+
+  <div class="divider"><i class="fi fi-rs-fingerprint"></i></div>
+
+  <div class="cart--group grid">
+    <div>
+      <!-- Calcular Envío -->
+      <div class="cart--shipping">
+        <h3 class="section--title">Calcular Envío</h3>
+        <form action="" class="form grid">
+          <input type="text" placeholder="País" class="form--input" />
+          <div class="form--group grid">
+            <input type="text" placeholder="Estado / Ciudad" class="form--input" />
+            <input type="text" placeholder="Código Postal" class="form--input" />
+          </div>
+          <button class="btn flex btn--sm">
+            <i class="fi fi-rs-map-marker"></i> Calcular
+          </button>
+        </form>
+      </div>
+
+      <!-- Aplicar Cupón -->
+      <div class="cart--coupon">
+        <h3 class="section--title">Aplicar Cupón</h3>
+        <form action="" class="coupon--form form grid">
+          <div class="form--group grid">
+            <input type="text" class="form--input" placeholder="Ingrese su cupón" />
+            <button class="btn flex btn--sm"><i class="fi fi-rs-label"></i> Aplicar Cupón</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Carrito Total -->
+    <div class="cart--total">
+      <h3 class="section--title"><i class="fi fi-rs-calculator"></i> Resumen del Pedido</h3>
+      <table class="cart--total-table">
+        <tr>
+          <td><i class="fi fi-rs-shopping-cart"></i> Subtotal del Carrito</td>
+          <td class="cart--total-price">$720.00</td>
+        </tr>
+        <tr>
+          <td><i class="fi fi-rs-truck"></i> Envío</td>
+          <td class="cart--total-price">$10.00</td>
+        </tr>
+        <tr class="cart--total-final">
+          <td><i class="fi fi-rs-credit-card"></i> Total</td>
+          <td class="cart--total-price">$730.00</td>
+        </tr>
+      </table>
+      <a href="checkout.html" class="btn flex btn--md checkout--btn">
+        <i class="fi fi-rs-box-alt"></i> 
+        <span>Proceder al Checkout</span>
+        <i class="fi fi-rs-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
 
       <!--=============== NEWSLETTER ===============-->
       <section class="newsletter"></section>
     </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+<footer class="footer">
+  <div class="footer--container container flex">
+    <p class="footer--text">Solutique © 2025 - Moda extravagante</p>
+
+    <div class="footer--socials">
+      <a href="https://www.instagram.com/" target="_blank" class="footer--social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/" target="_blank" class="footer--social-link">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:tuemail@gmail.com" class="footer--social-link">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</footer>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <script src="assets/js/carrusel-categorias.js"></script>
+
 
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
+    </script>
   </body>
 </html>

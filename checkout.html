@@ -4,40 +4,227 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
+   <!--=============== FLATICON ===============-->
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
 
+<link
+ rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+   <link
+ rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
+ <!--=============== CSS ===============-->
 
-    <title>Ecommerce Website</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header"></header>
+   <link rel="stylesheet" href="assets/css/styles.css" />
+
+   <title>Solutique</title>
+ </head>
+ <body>
+<!--=============== HEADER ===============-->
+<header class="header">
+  <div class="header--top">
+
+    <div class="header--container container">
+      <div class="header--contact">
+        
+      </div>
+
+      <p class="header--alert-news">
+      Echa un vistazo a nuestras ofertas
+      </p>
+
+      <a href="login-register.html" class="header--top-action">
+        Acceder / Registrarse
+      </a>
+    </div>
+  </div>
+
+  <nav class="nav container">
+    <a href="" class="nav--logo">
+      <img src="assets/img/logo-solutique.png" alt="" class="nav--logo-img"/>
+    </a>
+
+    <div class="nav--menu" id="nav-menu">
+      <ul class="nav--list">
+        <li class="nav--item">
+           <a href="index.html" class="nav--link">Inicio</a>
+        </li>
+          
+        <li class="nav--item">
+           <a href="shop.html" class="nav--link">Productos</a>
+        </li>
+
+        <li class="nav--item">
+           <a href="accounts.html" class="nav--link">Mi Cuenta</a>
+        </li>
+                    
+       
+        <li class="nav--item">
+           <a href="login-register.html" class="nav--link">Acceder</a>
+        </li>
+      </ul>
+
+      <div class="header--search">
+        <input type="text" placeholder="Buscar por artículo..." class="form--input">
+        <button class="search--btn">
+        </button>
+      </div>
+    </div>
+
+    <div class="header--user-action">
+      <a href="wishlist.html" class="header--action-btn">
+        <img src="assets/img/icon-heart.svg" alt="">
+        <span class="count">3</span>
+      </a>
+
+      <a href="cart.html" class="header--action-btn">
+        <img src="assets/img/icon-cart.svg" alt="">
+        <span class="count">3</span>
+      </a>
+
+
+    </div>
+  </nav>
+</header>
 
     <!--=============== MAIN ===============-->
     <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb"></section>
+       <!--=============== BREADCRUMB ===============-->
+     <section class="breadcrumb">
+      <ul class="breadcrumb--list flex container">
+        <li><a href="index.html" class="breadcrumb--link">Inicio</a></li>
+        <li><span class="breadcrumb--link">></span></span></li>
+        <li><span class="breadcrumb--link">Productos</span></span></li>
+        <li><span class="breadcrumb--link">></span></span></li>
+        <li><span class="breadcrumb--link">Checkout</span></span></li>
+      </ul>
+    </section>
 
       <!--=============== CHECKOUT ===============-->
-      <section class="checkout"></section>
+      <section class="checkout section--lg">
+        <div class="checkout--container container container grid">
+          <div class="checkout--group">
+            <h3 class="section--title">Detalles del pedido</h3>
+            <form action="" class="form grid">
+              <input type="text" placeholder="Nombre" class="form--input">
+              <input type="text" placeholder="Apellido" class="form--input">
+              <input type="email" placeholder="Email" class="form--input">
+              <input type="text" placeholder="Dirección" class="form--input">
+              <input type="text" placeholder="Ciudad" class="form--input">
+              <input type="text" placeholder="Código Postal" class="form--input">
+              <input type="text" placeholder="País" class="form--input">
+              <input type="text" placeholder="Teléfono" class="form--input">
+              
+
+              <h3 class="checkout--title">Información de Adicional</h3>
+
+              <textarea name="" placeholder="Notas del Pedido" id="" cols="30" rows="10" class="form--input textarea"></textarea>
+            </form>
+          </div>
+
+          <div class="checkout--group">
+            <h3 class="section--title">Total del Carrito</h3>
+
+            <table class="order--table">
+              <tr>
+                <th>Imagen</th>
+                <th>Producto</th>
+                <th>Total</th>
+              </tr>
+
+              <tr>
+                <td><img src="assets/img/product-1-2.jpg" alt="" class="order--img"></td>
+
+                <td>
+                  <h3 class="order--title">Virdaton Women Summer Blue</h3>
+                  <p class="totble--quantity">x 2</p>
+                </td>
+
+                <td><span class="table--price">$180.00</span></td>
+              </tr>
+
+              <tr>
+                <td><img src="assets/img/product-2-1.jpg" alt="" class="order--img"></td>
+
+                <td>
+                  <h3 class="order--title">VLDB MOON Women  Summer</h3>
+                  <p class="totble--quantity">x 1</p>
+                </td>
+
+                <td><span class="table--price">$65.00</span></td>
+              </tr>
+
+              <tr>
+                <td><img src="assets/img/product-7-1.jpg" alt="" class="order--img"></td>
+
+                <td>
+                  <h3 class="order--title">Women´s Short Sleeve Loose</h3>
+                  <p class="totble--quantity">x 2</p>
+                </td>
+
+                <td><span class="table--price">$35.00</span></td>
+              </tr>
+
+            <tr>
+              <td><sapan class="order--subtitle">SubTotal</sapan></td>
+              <td><span class="table--price">$280.00</span></td>
+            </tr>
+
+            <tr>
+              <td><sapan class="order--subtitle">Envío</sapan></td>
+              <td><span class="table--price">Envío gratis</span></td>
+            </tr>
+
+            <tr>
+              <td><sapan class="order--subtitle">Total</sapan></td>
+              <td><span class="table--price">$280.00</span></td>
+            </tr>
+            </table>
+
+            <a href="#" class="checkout--place-order"><i class="fi fi-rs-credit-card" style="margin-right:.5rem"></i> Realizar Pedido</a>
+            <div class="checkout--payments">
+              <span>Métodos de pago aceptados</span>
+              <img src="assets/img/payment-method.png" alt="Métodos de pago">
+            </div>
+          </div>
+
+        </div>
+      </section>
 
       <!--=============== NEWSLETTER ===============-->
       <section class="newsletter"></section>
     </main>
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
-
+   <!--=============== FOOTER ===============-->
+   <footer class="footer">
+    <div class="footer--container container flex">
+      <p class="footer--text">Solutique © 2025 - Moda extravagante</p>
+  
+      <div class="footer--socials">
+        <a href="https://www.instagram.com/" target="_blank" class="footer--social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/" target="_blank" class="footer--social-link">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:tuemail@gmail.com" class="footer--social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/js/carrusel-categorias.js"></script>
+
 
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

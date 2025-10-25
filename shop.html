@@ -72,7 +72,6 @@
           <div class="header--search">
             <input type="text" placeholder="Buscar por artículo..." class="form--input">
             <button class="search--btn">
-              <img src="assets/img/search.png" alt="" />
             </button>
           </div>
         </div>
@@ -372,5 +371,24 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!-- Script para filtrado automático por palabras clave al llegar desde una categoría popular -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const keywords = JSON.parse(localStorage.getItem('categoryFilter') || 'null');
+        if(keywords && Array.isArray(keywords)) {
+          const products = document.querySelectorAll('.product-item');
+          products.forEach(product => {
+            const name = product.querySelector('.product-name').textContent.toLowerCase();
+            if(keywords.some(k => name.includes(k))) {
+              product.style.display = 'block';
+            } else {
+              product.style.display = 'none';
+            }
+          });
+          localStorage.removeItem('categoryFilter');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -5,39 +5,296 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
-
-    <title>Ecommerce Website</title>
+ 
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+ />
+     <!--=============== SWIPER CSS ===============-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+ />
+ 
+  <!--=============== CSS ===============-->
+ 
+    <link rel="stylesheet" href="assets/css/styles.css" />
+ 
+    <title>Solutique</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
-    <header class="header"></header>
+<header class="header">
+      <div class="header--top">
+
+        <div class="header--container container">
+          <div class="header--contact">
+            
+          </div>
+
+          <p class="header--alert-news">
+          Echa un vistazo a nuestras ofertas
+          </p>
+
+          <a href="login-register.html" class="header--top-action">
+            Acceder / Registrarse
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="" class="nav--logo">
+          <img src="assets/img/logo-solutique.png" alt="" class="nav--logo-img"/>
+        </a>
+
+        <div class="nav--menu" id="nav-menu">
+          <div class="nav--menu-top">
+            <a href="index.html" class="nav--menu-logo">
+              <img src="assets/img/logo-solutique.png" alt="">
+            </a>
+
+            <div class="nav--close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
+          <ul class="nav--list">
+            <li class="nav--item">
+               <a href="index.html" class="nav--link active-link">Inicio</a>
+            </li>
+              
+            <li class="nav--item">
+               <a href="shop.html" class="nav--link">Productos</a>
+            </li>
+
+            <li class="nav--item">
+               <a href="accounts.html" class="nav--link">Mi Cuenta</a>
+            </li>
+                        
+            
+            <li class="nav--item">
+               <a href="login-register.html" class="nav--link">Acceder</a>
+            </li>
+          </ul>
+
+          <div class="header--search">
+            <input type="text" placeholder="Buscar por artículo..." class="form--input">
+            <button class="search--btn">
+              
+            </button>
+          </div>
+        </div>
+
+        <div class="header--user-action">
+          <a href="#" class="search-icon-mobile">
+            <img src="assets/img/search.png" alt="Buscar">
+          </a>
+          <a href="wishlist.html" class="header--action-btn">
+            <img src="assets/img/icon-heart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header--action-btn">
+            <img src="assets/img/icon-cart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+          <div class="header--action-btn nav--toggle" id="nav-toggle">
+            <img src="assets/img/menu-burger.svg" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+
 
     <!--=============== MAIN ===============-->
     <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb"></section>
+       <!--=============== BREADCRUMB ===============-->
+     <section class="breadcrumb">
+      <ul class="breadcrumb--list flex container">
+        <li><a href="index.html" class="breadcrumb--link">Inicio</a></li>
+        <li><span class="breadcrumb--link">></span></span></li>
+        <li><span class="breadcrumb--link">Mi Cuenta</span></span></li>
+      </ul>
+    </section>
 
-      <!--=============== ACCOUNTS ===============-->
-      <section class="accounts"></section>
+   <!--=============== ACCOUNTS ===============-->
+<section class="accounts section--lg">
+  <div class="accounts--container container grid">
+    <!-- ======= MENÚ LATERAL ======= -->
+    <div class="account--tabs">
+      <div class="account--tab active-tab" data-target="#panel">
+        <i class="fi fi-rr-dashboard"></i> Panel
+      </div>
+
+      <div class="account--tab" data-target="#ordenes">
+        <i class="fi fi-rr-shopping-bag"></i> Órdenes
+      </div>
+
+      <div class="account--tab" data-target="#actualizar-perfil">
+        <i class="fi fi-rr-user"></i> Perfil
+      </div>
+
+      <div class="account--tab" data-target="#mi-cuenta">
+        <i class="fi fi-rr-marker"></i> Dirección
+      </div>
+
+      <div class="account--tab" data-target="#cambiar-password">
+        <i class="fi fi-rr-lock"></i> Contraseña
+      </div>
+
+      <div class="account--tab logout">
+        <i class="fi fi-rr-exit"></i> Cerrar Sesión
+      </div>
+    </div>
+
+    <!-- ======= CONTENIDO ======= -->
+    <div class="tabs--content">
+      <!-- PANEL -->
+      <div class="tab--content active-tab" id="panel">
+        <h3 class="tab--header">¡Hola, Dane!</h3>
+        <div class="tab--body">
+          <p class="tab--description">
+            Desde el panel de tu cuenta, puedes ver tus pedidos recientes,
+            gestionar tus direcciones y editar los detalles de tu cuenta.
+          </p>
+        </div>
+      </div>
+
+      <!-- ÓRDENES -->
+      <div class="tab--content" id="ordenes">
+        <h3 class="tab--header">Tus Órdenes</h3>
+        <div class="tab--body">
+          <table class="placed--order-table">
+            <thead>
+              <tr>
+                <th>Orden</th>
+                <th>Fecha</th>
+                <th>Estatus</th>
+                <th>Total</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1357</td>
+                <td>22 de Marzo 2025</td>
+                <td><span class="status processing">Procesando</span></td>
+                <td>$125.00</td>
+                <td><a href="#" class="view--order">Ver</a></td>
+              </tr>
+              <tr>
+                <td>#12468</td>
+                <td>12 de Julio 2025</td>
+                <td><span class="status completed">Completado</span></td>
+                <td>$364.00</td>
+                <td><a href="#" class="view--order">Ver</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ACTUALIZAR PERFIL -->
+      <div class="tab--content" id="actualizar-perfil">
+        <h3 class="tab--header">Actualizar Perfil</h3>
+        <div class="tab--body">
+          <form action="#" class="form grid">
+            <input type="text" placeholder="Nombre de usuario" class="form--input" />
+            <input type="email" placeholder="Correo electrónico" class="form--input" />
+            <div class="form--btn">
+              <button type="submit" class="btn btn--md">Guardar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- MI CUENTA -->
+      <div class="tab--content" id="mi-cuenta">
+        <h3 class="tab--header">Dirección de Envío</h3>
+        <div class="tab--body">
+          <address class="address">
+            Calle Marcelo Simard No.1 <br />
+            Villa Verde, La Romana <br />
+            República Dominicana
+          </address>
+          <a href="#" class="edit">Editar</a>
+        </div>
+      </div>
+
+      <!-- CAMBIAR CONTRASEÑA -->
+      <div class="tab--content" id="cambiar-password">
+        <h3 class="tab--header">Cambiar Contraseña</h3>
+        <div class="tab--body">
+          <form action="#" class="form grid">
+            <input type="password" placeholder="Contraseña Actual" class="form--input" />
+            <input type="password" placeholder="Nueva Contraseña" class="form--input" />
+            <input type="password" placeholder="Confirmar Contraseña" class="form--input" />
+            <div class="form--btn">
+              <button type="submit" class="btn btn--md">Guardar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JS PARA ACTIVAR TABS -->
+<script>
+  const tabs = document.querySelectorAll(".account--tab");
+  const contents = document.querySelectorAll(".tab--content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const target = document.querySelector(tab.dataset.target);
+
+      if (!target) return; // Evita error en "Cerrar Sesión"
+
+      // Quitar clases activas
+      tabs.forEach(t => t.classList.remove("active-tab"));
+      contents.forEach(c => c.classList.remove("active-tab"));
+
+      // Activar seleccionados
+      tab.classList.add("active-tab");
+      target.classList.add("active-tab");
+    });
+  });
+</script>
+
 
       <!--=============== NEWSLETTER ===============-->
       <section class="newsletter"></section>
     </main>
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+   <!--=============== FOOTER ===============-->
+   <footer class="footer">
+    <div class="footer--container container flex">
+      <p class="footer--text">Solutique © 2025 - Moda extravagante</p>
+  
+      <div class="footer--socials">
+        <a href="https://www.instagram.com/" target="_blank" class="footer--social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/" target="_blank" class="footer--social-link">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:tuemail@gmail.com" class="footer--social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/js/carrusel-categorias.js"></script>
+
 
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

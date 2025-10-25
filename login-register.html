@@ -4,40 +4,184 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
+   <!--=============== FLATICON ===============-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+     <!--=============== SWIPER CSS ===============-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
+  <!--=============== CSS ===============-->
 
-    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Solutique</title>
   </head>
   <body>
-    <!--=============== HEADER ===============-->
-    <header class="header"></header>
+     <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header--top">
 
+        <div class="header--container container">
+          <div class="header--contact">
+            
+          </div>
+
+          <p class="header--alert-news">
+          Echa un vistazo a nuestras ofertas
+          </p>
+
+          <a href="login-register.html" class="header--top-action">
+            Acceder / Registrarse
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="" class="nav--logo">
+          <img src="assets/img/logo-solutique.png" alt="" class="nav--logo-img"/>
+        </a>
+
+        <div class="nav--menu" id="nav-menu">
+          <ul class="nav--list">
+            <li class="nav--item">
+               <a href="index.html" class="nav--link">Inicio</a>
+            </li>
+              
+            <li class="nav--item">
+               <a href="shop.html" class="nav--link">Productos</a>
+            </li>
+
+            <li class="nav--item">
+               <a href="accounts.html" class="nav--link">Mi Cuenta</a>
+            </li>
+                        
+           
+            <li class="nav--item">
+               <a href="login-register.html" class="nav--link active-link">Acceder</a>
+            </li>
+          </ul>
+
+          <div class="header--search">
+            <input type="text" placeholder="Buscar por artículo..." class="form--input">
+            <button class="search--btn">
+            </button>
+          </div>
+        </div>
+
+        <div class="header--user-action">
+          <a href="wishlist.html" class="header--action-btn">
+            <img src="assets/img/icon-heart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header--action-btn">
+            <img src="assets/img/icon-cart.svg" alt="">
+            <span class="count">3</span>
+          </a>
+
+
+        </div>
+      </nav>
+    </header>
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb"></section>
+     <section class="breadcrumb">
+        <ul class="breadcrumb--list flex container">
+          <li><a href="index.html" class="breadcrumb--link">Inicio</a></li>
+          <li><span class="breadcrumb--link">></span></span></li>
+          <li><span class="breadcrumb--link">Acceder / Registrarse</span></span></li>
+        </ul>
+      </section>
+       
 
       <!--=============== LOGIN-REGISTER ===============-->
-      <section class="login-register"></section>
+      <section class="login-register">
+        <div class="login-container">
+          <div class="auth-card">
+            <form action="procesar_login.php" method="POST" class="login-form">
+              <h2 class="login-title">Acceso al Sistema</h2>
+              <div class="input-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required placeholder="Ingresa tu usuario">
+              </div>
+              <div class="input-group">
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" name="clave" required placeholder="Ingresa tu contraseña">
+              </div>
+              <button type="submit" class="btn-login">INGRESAR</button>
+              <p class="small-text">Los datos de conexión que indicaste son de referencia.</p>
+              <div class="login-links">
+                <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+                <span>|</span>
+                <a href="#" class="register-link">¿No tienes cuenta? Regístrate</a>
+              </div>
+            </form>
+          </div>
+
+          <div class="auth-card">
+            <form action="porcesar registro.php" method="POST" class="register-form">
+              <h2 class="login-title">Regístrate en Solutique</h2>
+              <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+              </div>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Ingresa tu email">
+              </div>                                            
+              <div class="input-group">
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" name="clave" required placeholder="Ingresa tu contraseña">
+              </div>
+              <div class="input-group">
+                <label for="clave">Confirmar Contraseña</label>
+                <input type="password" id="clave" name="clave" required placeholder="Ingresa tu contraseña">
+              </div>
+              <button type="submit" class="btn-login">REGISTRARSE</button>
+              <p class="small-text">Al registrarte, aceptas nuestros términos y condiciones.</p>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <!--=============== NEWSLETTER ===============-->
       <section class="newsletter"></section>
     </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+  <div class="footer--container container flex">
+    <p class="footer--text">Solutique © 2025 - Moda extravagante</p>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <div class="footer--socials">
+      <a href="https://www.instagram.com/" target="_blank" class="footer--social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/" target="_blank" class="footer--social-link">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:tuemail@gmail.com" class="footer--social-link">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <script src="assets/js/carrusel-categorias.js"></script>
+
 
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

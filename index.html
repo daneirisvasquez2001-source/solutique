@@ -48,6 +48,15 @@
         </a>
 
         <div class="nav--menu" id="nav-menu">
+          <div class="nav--menu-top">
+            <a href="index.html" class="nav--menu-logo">
+              <img src="assets/img/logo-solutique.png" alt="">
+            </a>
+
+            <div class="nav--close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
           <ul class="nav--list">
             <li class="nav--item">
                <a href="index.html" class="nav--link active-link">Inicio</a>
@@ -70,12 +79,15 @@
           <div class="header--search">
             <input type="text" placeholder="Buscar por artículo..." class="form--input">
             <button class="search--btn">
-              <img src="assets/img/search.png" alt="" />
+              
             </button>
           </div>
         </div>
 
         <div class="header--user-action">
+          <a href="#" class="search-icon-mobile">
+            <img src="assets/img/search.png" alt="Buscar">
+          </a>
           <a href="wishlist.html" class="header--action-btn">
             <img src="assets/img/icon-heart.svg" alt="">
             <span class="count">3</span>
@@ -86,7 +98,9 @@
             <span class="count">3</span>
           </a>
 
-
+          <div class="header--action-btn nav--toggle" id="nav-toggle">
+            <img src="assets/img/menu-burger.svg" alt="">
+          </div>
         </div>
       </nav>
     </header>
@@ -137,51 +151,73 @@
 <!--=============== CATEGORIES ===============-->
 <section class="categories section">
   <h3 class="section--title"><span>Categorías </span>Populares</h3>
-
   <div class="categories--container swiper">
     <div class="swiper-wrapper">
       <a href="shop.html" class="category--item swiper-slide">
         <img src="assets/img/category-1.jpg" alt="T-shirt" class="category--img">
         <h3 class="category--title">T-shirt</h3>
       </a>
-
       <a href="shop.html" class="category--item swiper-slide">
         <img src="assets/img/category-2.jpg" alt="Carteras" class="category--img">
         <h3 class="category--title">Carteras</h3>
       </a>
-
       <a href="shop.html" class="category--item swiper-slide">
         <img src="assets/img/category-3.jpg" alt="Sandalias" class="category--img">
         <h3 class="category--title">Sandalias</h3>
       </a>
-
       <a href="shop.html" class="category--item swiper-slide">
         <img src="assets/img/category-4.jpg" alt="Gorros" class="category--img">
         <h3 class="category--title">Gorros</h3>
       </a>
-
       <a href="shop.html" class="category--item swiper-slide">
         <img src="assets/img/category-5.jpg" alt="Zapatos" class="category--img">
         <h3 class="category--title">Zapatos</h3>
       </a>
-
       <a href="shop.html" class="category--item swiper-slide">
         <img src="assets/img/category-7.jpg" alt="Pantalones" class="category--img">
         <h3 class="category--title">Pantalones</h3>
       </a>
-
       <a href="shop.html" class="category--item swiper-slide">
         <img src="assets/img/category-8.jpg" alt="Gorros Playeros" class="category--img">
         <h3 class="category--title">Gorros Playeros</h3>
       </a>
     </div>
-
-    <div class="swiper-button-next"><i class="fi fi-rs-angle-right"></i>
-    </div>
-    <div class="swiper-button-prev"><i class="fi fi-rs-angle-left"></i>
-    </div>
-
-  
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  new Swiper('.categories--container.swiper', {
+    slidesPerView: 5,
+    spaceBetween: 16,
+    loop: false,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1200: { slidesPerView: 5 },
+      900: { slidesPerView: 4 },
+      600: { slidesPerView: 2 },
+      0: { slidesPerView: 1 }
+    },
+    autoplay: false,
+    speed: 600
+  });
+});
+</script>
+<style>
+.categories--container .category--item {
+  min-width: 140px !important;
+  max-width: 160px !important;
+  width: 100%;
+}
+.categories--container .category--img {
+  width: 120px !important;
+  height: 120px !important;
+}
+</style>
 
       <!--=============== PRODUCTS ===============-->
       
@@ -477,5 +513,62 @@
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/filtrar-productos.js"></script>
+    <script>
+// Redirigir y filtrar desde categorías populares
+const categoryLinks = document.querySelectorAll('.category--item');
+categoryLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    let filter = '';
+    let keywords = [];
+    const title = this.querySelector('.category--title').textContent.trim().toLowerCase();
+    if(title === 't-shirt') {
+      filter = 'tshirt';
+      keywords = ['t-shirt','poloché','camiseta','camisa'];
+    } else if(title === 'carteras') {
+      filter = 'carteras';
+      keywords = ['carteras','cartera','bolso','bolsos'];
+    } else if(title === 'sandalias') {
+      filter = 'sandalias';
+      keywords = ['sandalias','sandalia'];
+    } else if(title === 'gorros') {
+      filter = 'gorros';
+      keywords = ['gorros','gorra','gorro'];
+    } else if(title === 'gorros playeros') {
+      filter = 'gorros playeros';
+      keywords = ['gorros','gorra','gorro','playero','playeros'];
+    } else if(title === 'zapatos') {
+      filter = 'zapatos';
+      keywords = ['zapatos','tenis'];
+    } else if(title === 'pantalones') {
+      filter = 'pantalones';
+      keywords = ['pantalon','pantalones'];
+    }
+    // Guardar filtro en localStorage
+    localStorage.setItem('categoryFilter', JSON.stringify(keywords));
+    window.location.href = 'shop.html';
+  });
+});
+</script>
+<script>
+// Filtrado de productos por categoría desde index.html
+function filterByCategoryKeywords() {
+  const keywords = JSON.parse(localStorage.getItem('categoryFilter') || 'null');
+  if(keywords && Array.isArray(keywords)) {
+    const products = document.querySelectorAll('.product-item');
+    products.forEach(product => {
+      const name = product.querySelector('.product-name').textContent.toLowerCase();
+      if(keywords.some(k => name.includes(k))) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+    // Limpiar filtro para futuras visitas
+    localStorage.removeItem('categoryFilter');
+  }
+}
+window.addEventListener('DOMContentLoaded', filterByCategoryKeywords);
+</script>
   </body>
 </html>
