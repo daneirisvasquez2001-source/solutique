@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
    <!-- Favicon -->
-    <link rel="icon" href="assets/img/logo-solutique.png" type="image/png"/>
+   <link rel="icon" href="assets/img/logo-solutique.png" type="image/png"/>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--=============== FLATICON ===============-->
+   <!--=============== FLATICON ===============-->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
 
@@ -46,7 +46,7 @@
         </div>
       </div>
 
-      <nav class="nav container">
+       <nav class="nav container">
   <a href="index.html" class="nav--logo">
     <img src="assets/img/logo-solutique.png" alt="" class="nav--logo-img"/>
   </a>
@@ -71,7 +71,7 @@
         <a href="accounts.html" class="nav--link">Mi Cuenta</a>
       </li>
       <li class="nav--item">
-        <a href="login-register.html" class="nav--link ">Acceder</a>
+        <a href="login-register.html" class="nav--link">Acceder</a>
       </li>
     </ul>
     <div class="header--search">
@@ -95,81 +95,68 @@
   </div>
 </nav>
     </header>
-
     <!--=============== MAIN ===============-->
     <main class="main">
-       <!--=============== BREADCRUMB ===============-->
+      <!--=============== BREADCRUMB ===============-->
      <section class="breadcrumb">
         <ul class="breadcrumb--list flex container">
           <li><a href="index.html" class="breadcrumb--link">Inicio</a></li>
           <li><span class="breadcrumb--link">></span></span></li>
-          <li><span class="breadcrumb--link">Productos</span></span></li>
-          <li><span class="breadcrumb--link">></span></span></li>
-          <li><span class="breadcrumb--link">Mis Favoritos</span></span></li>
+          <li><span class="breadcrumb--link">Acceder / Registrarse</span></span></li>
         </ul>
       </section>
-      <!--=============== WISHLIST ===============-->
-      <section class="wishlist section--lg container">
-         <div class="table--container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Imagen</th>
-          <th>Nombre</th>
-          <th>Precio</th>
-          <th>Stock status</th>
-          <th>Action</th>
-          <th>Eliminar</th>
-        </tr>
-      </thead>
+       
 
-      <tbody>
-        <tr>
-          <td><img src="assets/img/product-1-2.jpg" alt="" class="table--img" /></td>
-          <td>
-            <h3 class="table--title">J.Crew Mercantile Women Short-Sleeve</h3>
-            <p class="table--description">Maboriosam in a tonto nesciung eget disting magndapibus</p>
-          </td>
-          <td><span class="table--price">$110</span></td>
-          <td><span class="table--stock">In Stock</span></td>
-          <td><a href="" class="btn btn btn--sm">Agregar al Carrito</a></td>
-          <td><i class="fi fi-rs-trash table--trash"></i></td>
-        </tr>
+      <!--=============== LOGIN-REGISTER ===============-->
+     <section class="login-register">
+  <div class="login-container">
+    <div class="auth-card">
+      <form action="procesar_registro.php" method="POST" class="register-form">
+        
+        <h2 class="login-title">Regístrate en Solutique</h2>
 
-        <tr>
-          <td><img src="assets/img/product-7-1.jpg" alt="" class="table--img" /></td>
-          <td>
-            <h3 class="table--title">Amazon Essentials Women Tank</h3>
-            <p class="table--description">Maboriosam in a tonto nesciung eget disting magndapibus</p>
-          </td>
-          <td><span class="table--price">$120</span></td>
-          <td><span class="table--stock">In Stock</span></td>
-          <td><a href="" class="btn btn btn--sm">Agregar al Carrito</a></td>
-          <td><i class="fi fi-rs-trash table--trash"></i></td>
-        </tr>
+        <div class="input-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+        </div>
 
-        <tr>
-          <td><img src="assets/img/product-2-1.jpg" alt="" class="table--img" /></td>
-          <td>
-            <h3 class="table--title">Amazon Brand - Daily Ritual Womens Jersey</h3>
-            <p class="table--description">Maboriosam in a tonto nesciung eget disting magndapibus</p>
-          </td>
-          <td><span class="table--price">$150</span></td>
-          <td><span class="table--stock">In Stock</span></td>
-          <td><a href="" class="btn btn btn--sm">Agregar al Carrito</a></td>
-          <td><i class="fi fi-rs-trash table--trash"></i></td>
-        </tr>
-      </tbody>
-    </table>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Ingresa tu email">
+        </div>
+
+        <div class="input-group">
+          <label for="clave">Contraseña</label>
+          <input type="password" id="clave" name="clave" required placeholder="Ingresa tu contraseña">
+        </div>
+
+        <div class="input-group">
+          <label for="clave2">Confirmar Contraseña</label>
+          <input type="password" id="clave2" name="clave2" required placeholder="Confirma tu contraseña">
+        </div>
+
+        <button type="submit" class="btn-login">REGISTRARSE</button>
+
+        <p class="small-text">Al registrarte, aceptas nuestros términos y condiciones.</p>
+
+        <div class="login-links">
+          <a href="login-register.html">¿Ya tienes cuenta? Inicia sesión</a>
+        </div>
+
+      </form>
+    </div>
   </div>
-      </section>
+</section>
+
+</body>
+</html>
 
       <!--=============== NEWSLETTER ===============-->
       <section class="newsletter"></section>
     </main>
 
     <!--=============== FOOTER ===============-->
-<footer class="footer">
+    <footer class="footer">
   <div class="footer--container container flex">
     <p class="footer--text">Solutique © 2025 - Moda extravagante</p>
 
@@ -187,13 +174,12 @@
   </div>
 </footer>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <!--=============== SWIPER JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
    <script src="assets/js/carrusel-categorias.js"></script>
 
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-    <script>
   </body>
 </html>
